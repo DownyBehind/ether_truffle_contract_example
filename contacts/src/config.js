@@ -1,73 +1,76 @@
-export const CONTACT_ADDRESS = '0xfAd567EBdCb36f49F3a509FEDF9e72E3ad75ca59'
+export const CONTACT_ADDRESS = "0x30e4D54bA8F4C453dfF0661BFF70E05fad29eF72";
 
 export const CONTACT_ABI = [
   {
-    "constant": true,
-    "inputs": [],
-    "name": "count",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function",
-    "signature": "0x06661abd"
+    inputs: [],
+    payable: false,
+    stateMutability: "nonpayable",
+    type: "constructor",
   },
   {
-    "constant": true,
-    "inputs": [
+    constant: true,
+    inputs: [
       {
-        "name": "",
-        "type": "uint256"
-      }
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
     ],
-    "name": "contacts",
-    "outputs": [
+    name: "contacts",
+    outputs: [
       {
-        "name": "id",
-        "type": "uint256"
+        internalType: "uint256",
+        name: "id",
+        type: "uint256",
       },
       {
-        "name": "name",
-        "type": "string"
+        internalType: "string",
+        name: "name",
+        type: "string",
       },
       {
-        "name": "phone",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "phone",
+        type: "string",
+      },
     ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function",
-    "signature": "0xe0f478cb"
+    payable: false,
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "inputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "constructor",
-    "signature": "constructor"
+    constant: true,
+    inputs: [],
+    name: "count",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    payable: false,
+    stateMutability: "view",
+    type: "function",
   },
   {
-    "constant": false,
-    "inputs": [
+    constant: false,
+    inputs: [
       {
-        "name": "_name",
-        "type": "string"
+        internalType: "string",
+        name: "_name",
+        type: "string",
       },
       {
-        "name": "_phone",
-        "type": "string"
-      }
+        internalType: "string",
+        name: "_phone",
+        type: "string",
+      },
     ],
-    "name": "createContact",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function",
-    "signature": "0x3dce4920"
-  }
+    name: "createContact",
+    outputs: [],
+    payable: false,
+    stateMutability: "nonpayable",
+    type: "function",
+  },
 ];
