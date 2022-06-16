@@ -15,4 +15,6 @@ contract ERC20WithAutoMinerReward is ERC20 {
         }
         super._beforeTokenTransfer(from, to, value);
     }
+
+    // send transaction 
 }
