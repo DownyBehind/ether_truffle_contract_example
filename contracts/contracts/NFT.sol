@@ -7,7 +7,7 @@ contract NFT is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("NFT", "ITM") {}
+    constructor() ERC721("NFT", "NFT") {}
 
     function awardItem(address player, string memory tokenURI)
         public

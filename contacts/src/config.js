@@ -1,9 +1,9 @@
-export const CONTACT_ADDRESS = "0x800A57f856186A86e8Cd7458d0337b809aEAedD3";
+export const CONTACT_ADDRESS = "0x5Bc0CF02D61cA21B29C859630dc9bfc492E256D4";
 
-export const NFT_ADDRESS = "0x806bB2dCafeFB1AF0c28b6A3995429a5F92791c6";
+export const NFT_ADDRESS = "0x445EAd6EA0AAAA1a1488b6dC7fa5154B23CaDF01";
 
 export const ERC20WithAutoMinerReward_ADDRESS =
-  "0xF462f7dBC48A61d23692cA94C80c34F234105C75";
+  "0x62F90A89c21F922b0da40E1b87Be53f5405fd8da";
 
 export const CONTACT_ABI = [
   {
@@ -452,7 +452,13 @@ export const NFT_ABI = [
 
 export const ERC20WithAutoMinerReward_ABI = [
   {
-    inputs: [],
+    inputs: [
+      {
+        internalType: "uint256",
+        name: "initialSupply",
+        type: "uint256",
+      },
+    ],
     stateMutability: "nonpayable",
     type: "constructor",
   },
