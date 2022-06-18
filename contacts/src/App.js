@@ -134,7 +134,7 @@ function App() {
   }
 
   async function transferErc20Token() {
-    const address = "0x74476Eff9faE2AD39f6FBf32D2E6694eCc197629";
+    const address = "0x74476Eff9faE2AD39f6FBf32D2E6694eCc197629"; // 관리자 지갑 주소
     const amount = BigNumber.from("10000000000000000000");
 
     const transfer = await erc20List.methods
